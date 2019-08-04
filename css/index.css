@@ -21,6 +21,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+  font-color:black;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -55,8 +56,60 @@ table {
 }
 
 h1{
-  
+  font-weight:550;
+  text-align:center;
+  margin:100px 0;
 }
+
+h2{
+  text-align:center;
+  font-size:30px;
+  font-weight:300;
+}
+
+.t_pho{
+height:300px;
+width:100%;
+}
+/*　すがた移植*/
+body *{
+  color: black;
+}
+ul.nav  {
+    display:table;
+}
+ul.nav li{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.wrap {
+    clear: both;
+    width: 100%;
+}
+
+@media only screen and (min-width: 900px)
+{
+.txt, .bg {
+    width: 50%;
+    float: left;
+    display: table;
+    background-color: white;
+}
+
+.vMid {
+    display: table-cell;
+    padding: 100px 100px;
+    vertical-align: middle;
+}
+
+#sec02_02 .txt, #sec02_02 .bg {
+    float: right;
+}
+
+}
+/*ここまですがた移植*/
 
 /*under copy*/
 
@@ -193,14 +246,6 @@ nav ul a {
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  color: #8f8f8f;
-  background: white;
-  font-family: "Cardo", serif;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
